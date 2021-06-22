@@ -4,10 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import com.aleshatech.mvvmsampleapp.MainActivity
-import com.aleshatech.mvvmsampleapp.R
+import com.aleshatech.mvvmsampleapp.main.view.MainActivity
 import com.aleshatech.mvvmsampleapp.databinding.ActivitySignInBinding
 import com.aleshatech.mvvmsampleapp.login.viewmodel.SignInViewModel
 import com.aleshatech.mvvmsampleapp.utils.CustomeProgressDialog
@@ -54,7 +52,7 @@ class SignInActivity : AppCompatActivity() {
         viewModel.liveDataSucc.observe(this, {
             Log.i("checkData", "setLiveDataListeners: ${it}")
 
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
         })

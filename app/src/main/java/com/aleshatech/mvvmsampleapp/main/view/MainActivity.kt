@@ -1,7 +1,8 @@
-package com.aleshatech.mvvmsampleapp
+package com.aleshatech.mvvmsampleapp.main.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.aleshatech.mvvmsampleapp.R
 
 class MainActivity : AppCompatActivity() {
 
